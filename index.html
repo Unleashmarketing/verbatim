@@ -3,156 +3,312 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sütterlin übersetzen – 5 Seiten gratis | Verbatim</title>
-<meta name="description" content="Sütterlin, Kurrent und altdeutsche Handschriften präzise transkribieren. 5 Seiten gratis, danach 4,80 € pro Seite.">
-<meta property="og:title" content="Sütterlin übersetzen – 5 Seiten gratis | Verbatim">
-<meta property="og:description" content="Sütterlin, Kurrent und altdeutsche Handschriften präzise transkribieren. 5 Seiten gratis, danach 4,80 € pro Seite.">
+<title>Verbatim – Sütterlin & Kurrent per KI übersetzen | 5 Seiten gratis</title>
+<meta name="description" content="Verbatim transkribiert und übersetzt Sütterlin, Kurrent und altdeutsche Urkunden per KI – mit Plausibilitätsprüfung und archivtauglichen Dossiers. 5 Seiten gratis, danach 4,80 € pro Seite.">
+<meta property="og:title" content="Verbatim – Sütterlin & Kurrent per KI übersetzen">
+<meta property="og:description" content="Urkundenanalyse für Erbenermittler: Transkription, Übersetzung und Plausibilitätsprüfung historischer Handschriften. 5 Seiten gratis.">
 <meta property="og:url" content="https://verbatim-tool.de/">
 <link rel="canonical" href="https://verbatim-tool.de/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-<div class="site-header-inner">
-<a href="index.html" style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0"><div class="logo-mark">V</div><span class="font-serif" style="font-size:1.125rem;color:var(--primary)">Verbatim</span></a>
-<nav class="desktop-nav" style="display:flex;align-items:center;gap:0.25rem;font-size:0.875rem">
-<div class="nav-dropdown"><button style="display:flex;align-items:center;gap:0.25rem;padding:0.5rem 0.75rem;border-radius:0.375rem;background:none;border:none;color:var(--muted-foreground);font-size:0.875rem">Anwendungen <svg style="width:0.875rem;height:0.875rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-<div class="nav-dropdown-menu" style="display:none;padding:0.5rem"><a href="suetterlin-uebersetzen/index.html" class="nav-dropdown-item"><div class="font-serif" style="font-size:0.875rem;color:var(--primary)">Sütterlin übersetzen</div><div style="font-size:0.75rem;color:var(--muted-foreground);margin-top:0.125rem">Briefe, Tagebücher und Urkunden in Sütterlinschrift entziffern lassen.</div></a>
-<a href="kurrent-lesen/index.html" class="nav-dropdown-item"><div class="font-serif" style="font-size:0.875rem;color:var(--primary)">Kurrent lesen</div><div style="font-size:0.75rem;color:var(--muted-foreground);margin-top:0.125rem">Deutsche Kurrentschrift aus Akten und Kirchenbüchern lesbar machen.</div></a>
-<a href="urkunden-transkribieren-ki/index.html" class="nav-dropdown-item"><div class="font-serif" style="font-size:0.875rem;color:var(--primary)">Urkunden transkribieren</div><div style="font-size:0.75rem;color:var(--muted-foreground);margin-top:0.125rem">Historische Handschriften archivtauglich digitalisieren.</div></a>
-<a href="erbenermittler-software/index.html" class="nav-dropdown-item"><div class="font-serif" style="font-size:0.875rem;color:var(--primary)">Für Erbenermittler</div><div style="font-size:0.75rem;color:var(--muted-foreground);margin-top:0.125rem">Workflow und Abrechnung für Kanzleien und Nachlassverwaltung.</div></a></div></div>
-<a href="erbenermittler-software/index.html" style="padding:0.5rem 0.75rem;border-radius:0.375rem;color:var(--muted-foreground)">Für Erbenermittler</a>
-<a href="support/index.html" style="padding:0.5rem 0.75rem;border-radius:0.375rem;color:var(--muted-foreground)">Support</a>
+<div class="rw">
+
+<div class="rw-nav-wrap">
+<nav class="rw-nav">
+<a href="index.html" class="rw-logo"><div class="rw-logo-mark">V</div><span class="rw-logo-name">Verbatim</span></a>
+<div class="rw-nav-links">
+<div class="rw-dropdown">
+<button class="rw-nav-link" id="rw-dd-btn">Anwendungen <svg class="rw-ic" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+<div class="rw-dropdown-menu" id="rw-dd-menu">
+<a class="rw-dropdown-item" href="suetterlin-uebersetzen/index.html"><div class="t">Sütterlin übersetzen</div><div class="d">Briefe, Tagebücher und Urkunden in Sütterlinschrift entziffern lassen.</div></a>
+<a class="rw-dropdown-item" href="kurrent-lesen/index.html"><div class="t">Kurrent lesen</div><div class="d">Deutsche Kurrentschrift aus Akten und Kirchenbüchern lesbar machen.</div></a>
+<a class="rw-dropdown-item" href="urkunden-transkribieren-ki/index.html"><div class="t">Urkunden transkribieren</div><div class="d">Historische Handschriften archivtauglich digitalisieren.</div></a>
+<a class="rw-dropdown-item" href="erbenermittler-software/index.html"><div class="t">Für Erbenermittler</div><div class="d">Workflow und Abrechnung für Kanzleien und Nachlassverwaltung.</div></a>
+</div>
+</div>
+<a class="rw-nav-link" href="erbenermittler-software/index.html">Für Erbenermittler</a>
+<a class="rw-nav-link" href="support/index.html">Support</a>
+</div>
+<div class="rw-nav-cta">
+<a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-ghost rw-btn-sm">Anmelden</a>
+<a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-primary rw-btn-sm">Kostenlos starten</a>
+</div>
+<button class="rw-burger" id="rw-burger" aria-label="Menü"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
 </nav>
-<div class="desktop-cta" style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0">
-<a href="https://app.verbatim-tool.de/login" class="btn btn-ghost btn-sm">Anmelden</a>
-<a href="https://app.verbatim-tool.de/login" class="btn btn-primary btn-sm" style="padding-left:1.25rem;padding-right:1.25rem">Kostenlos starten</a>
-</div>
-<button id="mobile-burger" class="mobile-burger" aria-label="Menü" style="padding:0.5rem;background:none;border:none;color:var(--primary)"><svg style="width:1.25rem;height:1.25rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
-</div>
-<div id="mobile-nav" class="mobile-nav" style="display:none;border-top:1px solid var(--archive-border);background:var(--paper);padding:1rem 1.5rem">
-<p style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--sepia);margin:0.5rem 0">Anwendungen</p>
-<a href="suetterlin-uebersetzen/index.html" style="display:block;padding:0.5rem 0.75rem;font-size:0.875rem;border-radius:0.375rem">Sütterlin übersetzen</a>
-<a href="kurrent-lesen/index.html" style="display:block;padding:0.5rem 0.75rem;font-size:0.875rem;border-radius:0.375rem">Kurrent lesen</a>
-<a href="urkunden-transkribieren-ki/index.html" style="display:block;padding:0.5rem 0.75rem;font-size:0.875rem;border-radius:0.375rem">Urkunden transkribieren</a>
-<a href="erbenermittler-software/index.html" style="display:block;padding:0.5rem 0.75rem;font-size:0.875rem;border-radius:0.375rem">Für Erbenermittler</a>
-<hr style="border:none;border-top:1px solid var(--archive-border);margin:0.75rem 0">
-<a href="support/index.html" style="display:block;padding:0.5rem 0.75rem;font-size:0.875rem;color:var(--muted-foreground)">Support</a>
-<div style="margin-top:0.75rem;display:flex;gap:0.5rem">
-<a href="https://app.verbatim-tool.de/login" class="btn btn-outline" style="flex:1;text-align:center;padding:0.5rem">Anmelden</a>
-<a href="https://app.verbatim-tool.de/login" class="btn btn-primary" style="flex:1;text-align:center;padding:0.5rem">Starten</a>
+<div class="rw-mobile-nav" id="rw-mobile-nav">
+<p class="rw-mobile-eyebrow">Anwendungen</p>
+<a class="rw-mobile-link" href="suetterlin-uebersetzen/index.html">Sütterlin übersetzen</a>
+<a class="rw-mobile-link" href="kurrent-lesen/index.html">Kurrent lesen</a>
+<a class="rw-mobile-link" href="urkunden-transkribieren-ki/index.html">Urkunden transkribieren</a>
+<a class="rw-mobile-link" href="erbenermittler-software/index.html">Für Erbenermittler</a>
+<div class="rw-mobile-divider"></div>
+<a class="rw-mobile-link" href="support/index.html">Support</a>
+<div class="rw-mobile-cta">
+<a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-ghost">Anmelden</a>
+<a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-primary">Starten</a>
 </div>
 </div>
-</header>
+</div>
+
 <main>
-<section class="hero-gradient" style="overflow:hidden"><div style="max-width:72rem;margin:0 auto;padding:5rem 1.5rem 6rem;text-align:center">
-<div style="display:inline-flex;align-items:center;gap:0.5rem;border-radius:9999px;border:1px solid var(--archive-border);background:color-mix(in oklab, var(--paper) 70%, transparent);padding:0.25rem 0.75rem;font-size:0.75rem;color:var(--muted-foreground);margin-bottom:1.5rem"><svg style="width:0.875rem;height:0.875rem;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg> Urkundenanalyse für Erbenermittler</div>
-<h1 class="font-serif" style="font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.05;color:var(--primary)">Sütterlin, Kurrent &amp; altdeutsche Urkunden<br><span style="font-style:italic;color:var(--sepia)">per KI übersetzen</span></h1>
-<p style="margin-top:1.5rem;max-width:40rem;margin-left:auto;margin-right:auto;font-size:clamp(1rem,1.5vw,1.125rem);color:var(--muted-foreground);line-height:1.6">Laden Sie Ihre Urkunden hoch und erhalten Sie in Minuten präzise Transkriptionen, Übersetzungen und genealogische Auswertungen – archivtauglich aufbereitet.</p>
-<div style="margin-top:2.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.75rem">
-<a href="https://app.verbatim-tool.de/login" class="btn btn-primary btn-lg">Jetzt starten <svg style="width:1rem;height:1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-<a href="#pricing" class="btn btn-outline btn-lg">Preise ansehen</a></div>
-<p style="margin-top:1rem;font-size:0.75rem;color:var(--muted-foreground)">Die ersten <strong>5 Seiten gratis</strong> · danach 4,80 € pro Seite inkl. MwSt. · Karte erst bei Bedarf hinterlegen.</p>
-</div></section>
 
-<section class="section-border" style="background:color-mix(in oklab, var(--paper) 70%, transparent);border-top:1px solid color-mix(in oklab, var(--archive-border) 60%, transparent)"><div style="max-width:60rem;margin:0 auto;padding:2.5rem 1.5rem"><div class="stats-grid"><div style="text-align:center"><div class="font-serif" style="font-size:clamp(1.5rem,2.5vw,1.875rem);color:var(--primary)">5 Seiten</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--sepia);margin-top:0.375rem">gratis pro Konto</div></div>
-<div style="text-align:center"><div class="font-serif" style="font-size:clamp(1.5rem,2.5vw,1.875rem);color:var(--primary)">4,80 €</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--sepia);margin-top:0.375rem">pro Seite danach</div></div>
-<div style="text-align:center"><div class="font-serif" style="font-size:clamp(1.5rem,2.5vw,1.875rem);color:var(--primary)">DSGVO</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--sepia);margin-top:0.375rem">Server in der EU</div></div>
-<div style="text-align:center"><div class="font-serif" style="font-size:clamp(1.5rem,2.5vw,1.875rem);color:var(--primary)">ohne Abo</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--sepia);margin-top:0.375rem">keine Pakete</div></div></div></div></section>
+<section class="rw-hero">
+<div class="rw-eyebrow-pill"><svg class="rw-ic" style="width:14px;height:14px;color:var(--rw-reader-orange)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg> Urkundenanalyse für Erbenermittler</div>
+<h1>Sütterlin, Kurrent &amp; altdeutsche Urkunden<br><span class="rw-highlight">per KI übersetzt</span></h1>
+<p class="rw-hero-sub">Laden Sie Ihre Urkunden hoch und erhalten Sie <span class="rw-highlight">in Minuten</span> präzise Transkriptionen, Übersetzungen und genealogische Auswertungen – archivtauglich aufbereitet.</p>
+<div class="rw-hero-cta">
+<a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-primary rw-btn-lg">Jetzt kostenlos starten <svg class="rw-ic" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+<a href="#pricing" class="rw-hero-after-link rw-btn-link">oder Preise ansehen →</a>
+</div>
+<p class="rw-hero-note">Die ersten <strong>5 Seiten gratis</strong> · danach 4,80 € pro Seite inkl. MwSt. · Karte erst bei Bedarf hinterlegen.</p>
 
-<section id="applications" class="section-border"><div class="section-container">
-<div style="text-align:center;max-width:40rem;margin:0 auto 3rem"><p class="eyebrow">Anwendungen</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary)">Wofür Verbatim eingesetzt wird</h2><p style="margin-top:1rem;color:var(--muted-foreground)">Vier typische Aufgaben, für die Erbenermittler, Kanzleien und Familienforscher Verbatim nutzen.</p></div>
-<div class="two-col"><a href="suetterlin-uebersetzen/index.html" class="app-card"><div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem"><div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary)">Sütterlin übersetzen</h3><p style="margin-top:0.5rem;font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Briefe, Tagebücher und Urkunden in Sütterlinschrift entziffern lassen.</p></div><svg style="width:1.25rem;height:1.25rem;color:var(--sepia);opacity:0.6;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
-<a href="kurrent-lesen/index.html" class="app-card"><div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem"><div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary)">Kurrent lesen</h3><p style="margin-top:0.5rem;font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Deutsche Kurrentschrift aus Akten und Kirchenbüchern lesbar machen.</p></div><svg style="width:1.25rem;height:1.25rem;color:var(--sepia);opacity:0.6;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
-<a href="urkunden-transkribieren-ki/index.html" class="app-card"><div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem"><div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary)">Urkunden transkribieren</h3><p style="margin-top:0.5rem;font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Historische Handschriften archivtauglich digitalisieren.</p></div><svg style="width:1.25rem;height:1.25rem;color:var(--sepia);opacity:0.6;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
-<a href="erbenermittler-software/index.html" class="app-card"><div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem"><div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary)">Für Erbenermittler</h3><p style="margin-top:0.5rem;font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Workflow und Abrechnung für Kanzleien und Nachlassverwaltung.</p></div><svg style="width:1.25rem;height:1.25rem;color:var(--sepia);opacity:0.6;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a></div></div></section>
+<div class="rw-mockup-wrap">
+<div class="rw-laptop">
+<div class="rw-laptop-bar"><span class="rw-laptop-dot"></span><span class="rw-laptop-dot"></span><span class="rw-laptop-dot"></span></div>
+<img src="images/suetterlin-vorher-nachher.jpg" alt="Verbatim-Analyse: Sütterlin-Original links, KI-Transkription rechts" loading="eager">
+</div>
+<div class="rw-float-card">
+<span class="rw-tag"><svg class="rw-ic" style="width:11px;height:11px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4.5 8-11.8V6l-8-3-8 3v4.2C4 17.5 12 22 12 22Z"/></svg> Plausibilitätsprüfung</span>
+<p>Alternativlesart erkannt: „Anna" oder „Anna Maria"?</p>
+<p class="rw-alt">Quelle: Kirchenbuch, 1842 · unsicher markiert statt geglättet</p>
+</div>
+</div>
+</section>
 
-<section id="features" class="section-border" style="background:color-mix(in oklab, var(--paper) 30%, transparent)"><div class="section-container">
-<div style="max-width:40rem;margin-bottom:3.5rem"><p class="eyebrow">Funktionen</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary)">Vom verblassten Original zum verwertbaren Dokument</h2><p style="margin-top:1rem;color:var(--muted-foreground)">Eine Werkzeugkiste für alles, was zwischen Archivfund und Erbenermittlung steht.</p></div>
-<div class="features-grid"><div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Präzise Transkription</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Handgeschriebene und gedruckte Urkunden in altdeutscher Schrift werden zeichengetreu erfasst.</p></div>
-<div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Mehrsprachige Übersetzung</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Latein, Französisch, Polnisch, Tschechisch oder Russisch – direkt ins Deutsche übertragen.</p></div>
-<div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Plausibilitätsprüfung</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Namen, Orte und Daten werden auf historische Plausibilität geprüft.</p></div>
-<div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Referenz-Bibliothek</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Mit Historikern entwickelt: trainierte Beispiele fließen automatisch in jede Analyse ein.</p></div>
-<div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Strukturierte Dossiers</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Pro Fall entstehen archivtaugliche Dossiers mit Quellenangaben.</p></div>
-<div class="feature-card"><div class="feature-icon"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;color:var(--primary);margin-bottom:0.5rem">Für Nachlassverwalter</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Pro Vorgang abrechenbar, für Erbenermittler, Nachlassverwalter und Kanzleien.</p></div></div></div></section>
+<section class="rw-stats">
+<div class="rw-stats-grid">
+<div><div class="rw-stat-value">5 Seiten</div><div class="rw-stat-label">gratis pro Konto</div></div>
+<div><div class="rw-stat-value">4,80 €</div><div class="rw-stat-label">pro Seite danach</div></div>
+<div><div class="rw-stat-value">DSGVO</div><div class="rw-stat-label">Server in der EU</div></div>
+<div><div class="rw-stat-value">ohne Abo</div><div class="rw-stat-label">keine Pakete</div></div>
+</div>
+</section>
 
-<section id="how" class="section-border"><div class="section-container">
-<div style="max-width:40rem;margin-bottom:3.5rem"><p class="eyebrow">Ablauf</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary)">In drei Schritten zur fertigen Analyse</h2></div>
-<div class="steps-grid"><div><div class="font-serif" style="font-size:3rem;color:color-mix(in oklab, var(--sepia) 40%, transparent)">01</div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary);margin-bottom:0.5rem">Fall anlegen</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Erstellen Sie einen Fall und benennen Sie die Familie oder den Erblasser.</p></div>
-<div><div class="font-serif" style="font-size:3rem;color:color-mix(in oklab, var(--sepia) 40%, transparent)">02</div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary);margin-bottom:0.5rem">Urkunden hochladen</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">PDFs oder Scans hochladen – auch mehrere Dokumente gleichzeitig.</p></div>
-<div><div class="font-serif" style="font-size:3rem;color:color-mix(in oklab, var(--sepia) 40%, transparent)">03</div><h3 class="font-serif" style="font-size:1.25rem;color:var(--primary);margin-bottom:0.5rem">Analyse erhalten</h3><p style="font-size:0.875rem;color:var(--muted-foreground);line-height:1.6">Transkription, Übersetzung und Plausibilitätsprüfung – als sauberes Dossier.</p></div></div></div></section>
+<section id="applications" class="rw-section-border">
+<div class="rw-section">
+<div class="rw-section-head">
+<p class="rw-eyebrow">Anwendungen</p>
+<h2 class="rw-h2">Wofür Verbatim eingesetzt wird</h2>
+<p>Vier typische Aufgaben, für die Erbenermittler, Kanzleien und Familienforscher Verbatim nutzen.</p>
+</div>
+<div class="rw-grid-2">
+<a class="rw-card rw-link" href="suetterlin-uebersetzen/index.html"><div class="rw-card-row"><div><h3>Sütterlin übersetzen</h3><p>Briefe, Tagebücher und Urkunden in Sütterlinschrift entziffern lassen.</p></div><svg class="rw-ic" style="color:var(--rw-pen-blue);opacity:0.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="rw-card rw-link" href="kurrent-lesen/index.html"><div class="rw-card-row"><div><h3>Kurrent lesen</h3><p>Deutsche Kurrentschrift aus Akten und Kirchenbüchern lesbar machen.</p></div><svg class="rw-ic" style="color:var(--rw-pen-blue);opacity:0.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="rw-card rw-link" href="urkunden-transkribieren-ki/index.html"><div class="rw-card-row"><div><h3>Urkunden transkribieren</h3><p>Historische Handschriften archivtauglich digitalisieren.</p></div><svg class="rw-ic" style="color:var(--rw-pen-blue);opacity:0.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="rw-card rw-link" href="erbenermittler-software/index.html"><div class="rw-card-row"><div><h3>Für Erbenermittler</h3><p>Workflow und Abrechnung für Kanzleien und Nachlassverwaltung.</p></div><svg class="rw-ic" style="color:var(--rw-pen-blue);opacity:0.6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+</div>
+</div>
+</section>
 
-<section class="section-border" style="background:color-mix(in oklab, var(--paper) 30%, transparent)"><div style="max-width:72rem;margin:0 auto;padding:5rem 1.5rem"><div class="showcase-grid">
-<div><p class="eyebrow">Beispiel</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary);line-height:1.15">Aus verblasster Sütterlinschrift wird lesbarer Text</h2><p style="margin-top:1.25rem;color:var(--muted-foreground);line-height:1.8">Verbatim übernimmt Handschriften zeichengetreu und markiert unsichere Stellen statt sie stillschweigend zu glätten.</p><div style="margin-top:1.5rem"><a href="suetterlin-uebersetzen/index.html" class="btn btn-outline" style="border-radius:9999px">Zum Sütterlin-Übersetzer <svg style="width:1rem;height:1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div>
-<div class="showcase-img"><img src="images/suetterlin-vorher-nachher.jpg" alt="Sütterlin-Vorlage links, transkribierte Fassung rechts" loading="lazy"></div>
-</div></div></section>
+<section id="how" class="rw-section-border">
+<div class="rw-section">
+<div class="rw-section-head">
+<p class="rw-eyebrow">Ablauf</p>
+<h2 class="rw-h2">In drei Schritten zur fertigen Analyse</h2>
+</div>
+<div class="rw-steps">
+<div class="rw-step">
+<div class="rw-step-icon blue"><svg class="rw-ic" style="color:#fff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg></div>
+<h3>Fall anlegen</h3>
+<p>Erstellen Sie einen Fall und benennen Sie die Familie oder den Erblasser.</p>
+</div>
+<div class="rw-step">
+<div class="rw-step-icon purple"><svg class="rw-ic" style="color:#fff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+<h3>Urkunden hochladen</h3>
+<p>PDFs oder Scans hochladen – auch mehrere Dokumente gleichzeitig.</p>
+</div>
+<div class="rw-step">
+<div class="rw-step-icon orange"><svg class="rw-ic" style="color:#fff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+<h3>Analyse erhalten</h3>
+<p>Transkription, Übersetzung und Plausibilitätsprüfung – als sauberes Dossier.</p>
+</div>
+</div>
+</div>
+</section>
 
-<section id="pricing" class="section-border"><div style="max-width:56rem;margin:0 auto;padding:5rem 1.5rem">
-<div style="text-align:center;max-width:36rem;margin:0 auto 3rem"><p class="eyebrow">Preis</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary)">Seitengenau abgerechnet</h2><p style="margin-top:1rem;color:var(--muted-foreground)">Ein einziger, transparenter Preis. Keine Pakete, kein Abo, kein verfallendes Guthaben.</p></div>
-<div class="pricing-card"><div style="text-align:center"><p class="eyebrow" style="margin-bottom:0.75rem">Start gratis</p><div style="display:flex;align-items:baseline;justify-content:center;gap:0.5rem"><span class="font-serif" style="font-size:clamp(3rem,6vw,4.5rem);color:var(--primary)">5 Seiten</span><span style="color:var(--muted-foreground)">gratis</span></div><p style="margin-top:0.5rem;font-size:0.875rem;color:var(--muted-foreground)">Die ersten 5 Seiten pro Konto sind kostenlos. Keine Karte nötig.</p>
-<div style="margin-top:1.5rem;display:inline-flex;align-items:baseline;gap:0.5rem;border-radius:9999px;border:1px solid var(--archive-border);background:color-mix(in oklab, var(--paper) 60%, transparent);padding:0.5rem 1.25rem"><span style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--sepia)">Danach</span><span class="font-serif" style="font-size:1.5rem;color:var(--primary)">4,80&nbsp;€</span><span style="font-size:0.875rem;color:var(--muted-foreground)">/ Seite · inkl. 19 % MwSt.</span></div></div>
-<div style="margin-top:2rem;border-radius:0.5rem;border:1px solid var(--archive-border);background:color-mix(in oklab, var(--paper) 60%, transparent);padding:1.25rem;font-size:0.875rem"><p style="font-weight:500;color:var(--primary);margin:0 0 0.5rem">So funktioniert die Abrechnung</p><ol style="list-style:decimal;padding-left:1.5rem;color:var(--muted-foreground);line-height:1.6;margin:0"><li>Konto anlegen und sofort die ersten 5 Seiten kostenlos analysieren.</li><li>Sind die Freiseiten verbraucht: Karte hinterlegen (Stripe).</li><li>Vor jeder Analyse: Seitenzahl und Endbetrag werden angezeigt.</li><li>Nach erfolgreicher Analyse: Abbuchung. Rechnung per E-Mail.</li></ol></div>
-<div class="benefits-grid" style="margin-top:2rem"><div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Die ersten 5 Seiten pro Konto kostenlos — ohne Karte, ohne Abo</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Danach strikt pro Seite — keine Pakete, kein verfallendes Guthaben</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Karte erst hinterlegen, wenn die Freiseiten verbraucht sind</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Automatische Rechnung per E-Mail nach jeder Analyse</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Pro Vorgang abrechenbar und weiterberechenbar</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Volle Plausibilitätsprüfung und Korrekturhinweise inklusive</span></div>
-<div class="benefit-item"><svg style="width:1rem;height:1rem;flex-shrink:0;color:var(--sepia)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Mehrsprachige Übersetzung (Latein, Französisch, Polnisch u. a.)</span></div></div>
-<div style="margin-top:2.5rem;text-align:center"><a href="https://app.verbatim-tool.de/login" class="btn btn-primary btn-lg">Konto anlegen <svg style="width:1rem;height:1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div>
-<p style="text-align:center;font-size:0.75rem;color:var(--muted-foreground);margin-top:2rem;max-width:40rem;margin-left:auto;margin-right:auto">Schlägt eine Analyse fehl, fällt keine Gebühr an.</p></div></section>
+<section id="features" class="rw-section-border" style="background:#fff">
+<div class="rw-section">
+<div class="rw-section-head rw-left">
+<p class="rw-eyebrow">Funktionen</p>
+<h2 class="rw-h2">Vom verblassten Original zum verwertbaren Dokument</h2>
+<p>Eine Werkzeugkiste für alles, was zwischen Archivfund und Erbenermittlung steht.</p>
+</div>
+<div class="rw-grid-3">
 
-<section class="section-border" style="background:color-mix(in oklab, var(--paper) 30%, transparent)"><div class="section-narrow" style="padding-top:5rem;padding-bottom:5rem">
-<p class="eyebrow">Häufige Fragen</p><h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary);margin-bottom:2.5rem">Was Sie wissen möchten</h2>
-<div><div class="faq-item"><button class="faq-question"><span>Was kostet die Nutzung von Verbatim?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">Die ersten 5 Seiten pro Konto sind vollständig kostenlos – ohne Kreditkarte. Danach 4,80 € pro Seite inkl. 19 % MwSt. Kein Abo, keine Pakete.</div></div>
-<div class="faq-item"><button class="faq-question"><span>Welche Dokumente kann ich hochladen?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">PDFs und gängige Bildformate (JPG, PNG). Mehrseitige Scans und mehrere Dokumente gleichzeitig. Empfohlen: ≥ 300 dpi.</div></div>
-<div class="faq-item"><button class="faq-question"><span>Wie gut ist die Erkennung bei unleserlichen Stellen?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">Verbatim markiert unsichere Stellen klar und bietet Alternativlesarten an – statt eine geglättete Variante zu erzwingen.</div></div>
-<div class="faq-item"><button class="faq-question"><span>Sind meine Dokumente sicher?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">Ja. Alle Daten werden DSGVO-konform in der EU verarbeitet. Ihre Dokumente sind ausschließlich für Ihr Konto zugänglich.</div></div>
-<div class="faq-item"><button class="faq-question"><span>Welche Schriften und Sprachen werden erkannt?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">Sütterlin, Kurrent und deutsche Kanzleischrift (17.–20. Jh.), lateinische Kanzleischrift sowie Latein, Französisch, Polnisch, Tschechisch und Russisch.</div></div>
-<div class="faq-item"><button class="faq-question"><span>Kann ich die Analysen weiterberechnen?</span><svg class="icon faq-chevron" style="width:1.25rem;height:1.25rem;flex-shrink:0;color:var(--sepia);margin-top:0.125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer">Ja. Jede Analyse erzeugt eine Rechnung mit ausgewiesener Seitenzahl, die direkt als Aufwand im Mandat geltend gemacht werden kann.</div></div>
-</div></div></section>
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></div><h3>Präzise Transkription</h3><p>Handgeschriebene und gedruckte Urkunden in altdeutscher Schrift werden zeichengetreu erfasst – inklusive Namen, Daten und Orten.</p></div>
 
-<section><div style="max-width:56rem;margin:0 auto;padding:5rem 1.5rem;text-align:center">
-<h2 class="font-serif" style="font-size:clamp(1.875rem,3vw,2.25rem);color:var(--primary)">Bereit für die nächste Urkunde?</h2>
-<p style="margin-top:1rem;color:var(--muted-foreground)">Legen Sie in unter einer Minute Ihren ersten Fall an.</p>
-<div style="margin-top:2rem"><a href="https://app.verbatim-tool.de/login" class="btn btn-primary btn-lg">Jetzt starten <svg style="width:1rem;height:1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div></section>
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></div><h3>Mehrsprachige Übersetzung</h3><p>Latein, Französisch, Polnisch, Tschechisch oder Russisch – Dokumente werden direkt ins Deutsche übertragen.</p></div>
+
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11.8V6l-8-3-8 3v4.2C4 17.5 12 22 12 22Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Plausibilitätsprüfung</h3><p>Namen, Orte und Daten werden auf historische Plausibilität geprüft. Unsicherheiten werden klar mit Alternativen gekennzeichnet.</p></div>
+
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></div><h3>Referenz-Bibliothek</h3><p>Mit Historikern entwickelt: trainierte Beispiele und Vergleichsdokumente fließen automatisch in jede Analyse ein.</p></div>
+
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6l-1.5 3L2 17.5A2 2 0 0 0 3.8 21h16.4a2 2 0 0 0 1.8-3.5L15.5 11 14 8V2"/><path d="M8.5 2h7"/><path d="M7 15h10"/></svg></div><h3>Strukturierte Dossiers</h3><p>Pro Fall entstehen archivtaugliche Dossiers mit Quellenangaben, ideal zur Weitergabe an Behörden und Gerichte.</p></div>
+
+<div class="rw-card"><div class="rw-icon-chip"><svg class="rw-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Für Nachlassverwalter</h3><p>Geeignet für Erbenermittler, Nachlassverwalter und Kanzleien – pro Vorgang abrechenbar.</p></div>
+
+</div>
+</div>
+</section>
+
+<section class="rw-section-border">
+<div class="rw-section">
+<div class="rw-showcase">
+<div>
+<p class="rw-eyebrow">Beispiel</p>
+<h2 class="rw-h2" style="line-height:1.15">Aus verblasster Sütterlinschrift wird lesbarer Text</h2>
+<p style="margin-top:20px;color:var(--rw-deep-slate);line-height:1.7">Verbatim übernimmt Handschriften zeichengetreu und markiert unsichere Stellen statt sie stillschweigend zu glätten. Namen, Orte und Daten werden auf historische Plausibilität geprüft — mit Alternativlesarten, wo die Vorlage mehrdeutig ist.</p>
+<div style="margin-top:24px"><a href="suetterlin-uebersetzen/index.html" class="rw-btn rw-btn-ghost">Zum Sütterlin-Übersetzer <svg class="rw-ic" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+<div class="rw-showcase-img"><img src="images/suetterlin-vorher-nachher.jpg" alt="Sütterlin-Vorlage links, transkribierte Fassung rechts" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<section class="rw-section-border" style="background:#fff">
+<div class="rw-section">
+<div class="rw-section-head">
+<p class="rw-eyebrow">Vision &amp; Roadmap</p>
+<h2 class="rw-h2">Was als Nächstes kommt</h2>
+<p>Verbatim ist mehr als Transkription. So wollen wir die Lücke zwischen Urkundenfund und fertiger Erbenermittlung weiter schließen – mit Funktionen, die es als fertiges Werkzeug bisher kaum gibt.</p>
+</div>
+<div class="rw-roadmap-note"><strong>Hinweis:</strong> Die folgenden Funktionen sind geplante Erweiterungen und noch nicht Teil des aktuellen Produkts. Wir zeigen sie, damit Sie sehen, wohin sich Verbatim entwickelt.</div>
+<div class="rw-grid-2">
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Automatischer Stammbaum</h3><p>Erkannte Personen, Orte und Verwandtschaftsangaben werden automatisch zu einem visuellen Stammbaum verknüpft – mit GEDCOM-Export für Ahnenforschungs-Software.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Erbquoten-Rechner</h3><p>Aus den extrahierten Urkundendaten den gesetzlichen Verwandtschaftsgrad und die Erbquote automatisch berechnen – als gerichtsfertige Grafik.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Schreiber-Fingerprint</h3><p>KI erkennt, ob mehrere Dokumente von derselben Hand stammen, und gruppiert Aktenbestände automatisch nach Schreiber oder Notar.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Fallübergreifende Personensuche</h3><p>Namen, Orte und Daten werden über alle Fälle eines Kontos hinweg verknüpft – taucht eine Person erneut auf, werden Sie sofort informiert.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Archiv-Quellen-Matching</h3><p>Direkter Abgleich erkannter Namen und Orte mit offenen Archivportalen wie Matricula, Archion oder FamilySearch – inklusive Belegstellen-Vorschlag.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Live-Konfidenz-Heatmap</h3><p>Unsichere Erkennungen werden direkt farblich auf dem Originalscan markiert – nicht nur im Text, sondern genau an der Stelle im Bild.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Scan-App für den Lesesaal</h3><p>Dokumente direkt im Archiv mit dem Smartphone fotografieren – mit automatischer Entzerrung und Qualitätsprüfung vor dem Hochladen.</p></div>
+
+<div class="rw-card"><span class="rw-badge-outline"><span class="rw-badge-dot"></span>Auf der Roadmap</span><h3>Kollaborative Fallakten</h3><p>Mehrere Bearbeiter pro Fall, Kommentare direkt an Textstellen und automatische Fristenerinnerung für Nachlassverfahren.</p></div>
+
+</div>
+</div>
+</section>
+
+<section id="pricing" class="rw-section-border">
+<div class="rw-section" style="max-width:900px">
+<div class="rw-section-head">
+<p class="rw-eyebrow">Preis</p>
+<h2 class="rw-h2">Seitengenau abgerechnet</h2>
+<p>Ein einziger, transparenter Preis. Keine Pakete, kein Abo, kein verfallendes Guthaben.</p>
+</div>
+
+<div class="rw-pricing-card">
+<div style="text-align:center">
+<p class="rw-eyebrow" style="margin-bottom:12px">Start gratis</p>
+<div style="display:flex;align-items:baseline;justify-content:center;gap:10px"><span style="font-family:var(--rw-font-charter);font-size:clamp(2.6rem,6vw,4rem);color:var(--rw-ink)">5 Seiten</span><span style="color:var(--rw-deep-slate)">gratis</span></div>
+<p style="margin-top:8px;font-size:14px;color:var(--rw-deep-slate)">Die ersten 5 Seiten pro Konto sind kostenlos. Keine Karte nötig.</p>
+<div class="rw-price-pill" style="margin-top:20px"><span style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--rw-deep-slate);font-weight:800">Danach</span><span style="font-family:var(--rw-font-charter);font-size:22px;color:var(--rw-ink)">4,80&nbsp;€</span><span style="font-size:14px;color:var(--rw-deep-slate)">/ Seite · inkl. 19 % MwSt.</span></div>
+</div>
+
+<div class="rw-steps-box" style="margin-top:32px"><p class="lead">So funktioniert die Abrechnung</p><ol><li>Konto anlegen und sofort die ersten 5 Seiten kostenlos analysieren – ohne Zahlungsmethode.</li><li>Sind die Freiseiten verbraucht: Karte im Profil hinterlegen (Stripe).</li><li>Vor jeder kostenpflichtigen Analyse: Seitenzahl, Freianteil und Endbetrag werden angezeigt und bestätigt.</li><li>Nach erfolgreicher Analyse erfolgt die Abbuchung. Rechnung per E-Mail.</li></ol></div>
+
+<div class="rw-benefits-grid" style="margin-top:32px">
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Die ersten 5 Seiten pro Konto kostenlos — ohne Karte, ohne Abo</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Danach strikt pro Seite — keine Pakete, kein verfallendes Guthaben</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Karte erst hinterlegen, wenn die Freiseiten verbraucht sind</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Automatische Rechnung per E-Mail nach jeder kostenpflichtigen Analyse</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Pro Vorgang abrechenbar und weiterberechenbar</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Volle Plausibilitätsprüfung und Korrekturhinweise inklusive</span></div>
+<div class="rw-benefit"><svg class="rw-ic rw-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Mehrsprachige Übersetzung (Latein, Französisch, Polnisch u. a.)</span></div>
+</div>
+
+<div style="margin-top:36px;text-align:center"><a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-primary rw-btn-lg">Konto anlegen <svg class="rw-ic" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+<p style="text-align:center;font-size:12px;color:var(--rw-deep-slate);margin-top:28px;max-width:560px;margin-left:auto;margin-right:auto">Schlägt eine Analyse fehl, fällt keine Gebühr an. Bei verbrauchsrelevanten Verträgen erlischt das Widerrufsrecht mit Start der jeweiligen Analyse — die Zustimmung holen wir vor jeder Abbuchung erneut ein.</p>
+</div>
+</section>
+
+<section class="rw-section-border" style="background:#fff">
+<div class="rw-section" style="max-width:720px">
+<p class="rw-eyebrow">Häufige Fragen</p>
+<h2 class="rw-h2" style="margin-bottom:36px">Was Sie wissen möchten</h2>
+<div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Was kostet die Nutzung von Verbatim?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Die ersten 5 Seiten pro Konto sind vollständig kostenlos – ohne Kreditkarte. Danach zahlen Sie 4,80 € pro analysierter Seite inkl. 19 % MwSt. Kein Abo, keine Pakete, kein verfallenes Guthaben.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Welche Dokumente kann ich hochladen?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">PDFs und gängige Bildformate (JPG, PNG). Mehrseitige Scans und mehrere Dokumente gleichzeitig sind möglich. Wir empfehlen mindestens 300 dpi für beste Ergebnisse.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Wie gut ist die Erkennung bei unleserlichen Stellen?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Verbatim markiert unsichere Stellen klar und bietet Alternativlesarten an – statt eine geglättete Variante zu erzwingen. So behalten Sie immer die Kontrolle über die Interpretation.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Sind meine Dokumente sicher?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Ja. Alle Daten werden DSGVO-konform in der EU verarbeitet. Ihre Dokumente sind ausschließlich für Ihr Konto zugänglich. Details finden Sie in unserer Datenschutzerklärung.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Welche Schriften und Sprachen werden erkannt?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Sütterlin, Kurrent und deutsche Kanzleischrift (17.–20. Jh.), lateinische Kanzleischrift sowie Latein, Französisch, Polnisch, Tschechisch und Russisch in handschriftlichen Vorlagen.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Kann ich die Analysen weiterberechnen?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Ja. Jede Analyse erzeugt eine Rechnung mit ausgewiesener Seitenzahl, die direkt als Aufwand im Mandat oder Auftrag geltend gemacht werden kann.</div></div>
+<div class="rw-faq-item"><button class="rw-faq-q"><span>Sind die Roadmap-Funktionen schon verfügbar?</span><svg class="rw-ic rw-faq-chevron" style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="rw-faq-a">Nein. Die im Abschnitt „Vision & Roadmap" gezeigten Funktionen wie Stammbaum-Generator oder Erbquoten-Rechner sind geplante Erweiterungen und noch nicht Teil des aktuellen Produkts.</div></div>
+</div>
+</div>
+</section>
+
+<section class="rw-cta-section">
+<h2 class="rw-h2">Bereit für die nächste Urkunde?</h2>
+<p style="margin-top:14px;color:var(--rw-deep-slate)">Legen Sie in unter einer Minute Ihren ersten Fall an.</p>
+<div style="margin-top:28px"><a href="https://app.verbatim-tool.de/login" class="rw-btn rw-btn-primary rw-btn-lg">Jetzt starten <svg class="rw-ic" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</section>
+
 </main>
-<footer class="site-footer">
-<div class="footer-grid">
-<div><div style="display:flex;align-items:center;gap:0.5rem"><div class="logo-mark" style="height:1.75rem;width:1.75rem;font-size:0.875rem">V</div><span class="font-serif" style="color:var(--primary)">Verbatim</span></div>
-<p style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted-foreground);max-width:24rem;line-height:1.6">KI-gestützte Transkription und Analyse historischer Urkunden für Erbenermittler, Nachlassverwalter und Kanzleien. DSGVO-konform in der EU.</p></div>
-<div><p class="footer-heading">Anwendungen</p><ul class="footer-links"><li><a href="suetterlin-uebersetzen/index.html">Sütterlin übersetzen</a></li>
+
+<footer class="rw-footer">
+<div class="rw-footer-grid">
+<div>
+<div style="display:flex;align-items:center;gap:8px"><div class="rw-logo-mark" style="height:28px;width:28px;font-size:0.9rem">V</div><span class="rw-logo-name">Verbatim</span></div>
+<p style="margin-top:12px;font-size:12px;color:var(--rw-deep-slate);max-width:320px;line-height:1.6">KI-gestützte Transkription und Analyse historischer Urkunden für Erbenermittler, Nachlassverwalter und Kanzleien. Verarbeitung DSGVO-konform in der EU.</p>
+</div>
+<div><p class="rw-footer-heading">Anwendungen</p><ul class="rw-footer-links">
+<li><a href="suetterlin-uebersetzen/index.html">Sütterlin übersetzen</a></li>
 <li><a href="kurrent-lesen/index.html">Kurrent lesen</a></li>
 <li><a href="urkunden-transkribieren-ki/index.html">Urkunden transkribieren</a></li>
-<li><a href="erbenermittler-software/index.html">Für Erbenermittler</a></li></ul></div>
-<div><p class="footer-heading">Produkt</p><ul class="footer-links"><li><a href="index.html#features">Funktionen</a></li><li><a href="index.html#how">Ablauf</a></li><li><a href="index.html#pricing">Preise</a></li><li><a href="https://app.verbatim-tool.de/login">Anmelden</a></li></ul></div>
-<div><p class="footer-heading">Rechtliches &amp; Hilfe</p><ul class="footer-links"><li><a href="support/index.html">Support &amp; FAQ</a></li><li><a href="impressum/index.html">Impressum</a></li><li><a href="datenschutz/index.html">Datenschutz</a></li><li><a href="agb/index.html">AGB</a></li></ul></div>
+<li><a href="erbenermittler-software/index.html">Für Erbenermittler</a></li>
+</ul></div>
+<div><p class="rw-footer-heading">Produkt</p><ul class="rw-footer-links">
+<li><a href="index.html#features">Funktionen</a></li>
+<li><a href="index.html#how">Ablauf</a></li>
+<li><a href="index.html#pricing">Preise</a></li>
+<li><a href="https://app.verbatim-tool.de/login">Anmelden</a></li>
+</ul></div>
+<div><p class="rw-footer-heading">Rechtliches &amp; Hilfe</p><ul class="rw-footer-links">
+<li><a href="support/index.html">Support &amp; FAQ</a></li>
+<li><a href="impressum/index.html">Impressum</a></li>
+<li><a href="datenschutz/index.html">Datenschutz</a></li>
+<li><a href="agb/index.html">AGB</a></li>
+</ul></div>
 </div>
-<div class="footer-bottom">© 2026 Verbatim. Alle Rechte vorbehalten.</div>
+<div class="rw-footer-bottom">© 2026 Verbatim. Alle Rechte vorbehalten.</div>
 </footer>
+
+</div>
 <script>
-document.querySelectorAll('.faq-question').forEach(function(btn){
+document.querySelectorAll('.rw-faq-q').forEach(function(btn){
   btn.addEventListener('click',function(){
-    var item=btn.closest('.faq-item');
+    var item=btn.closest('.rw-faq-item');
     var wasOpen=item.classList.contains('open');
-    item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});
+    item.parentElement.querySelectorAll('.rw-faq-item').forEach(function(i){i.classList.remove('open')});
     if(!wasOpen) item.classList.add('open');
   });
 });
-var dd=document.querySelector('.nav-dropdown');
-if(dd){
-  var menu=dd.querySelector('.nav-dropdown-menu');
-  dd.querySelector('button').addEventListener('click',function(e){
+var ddBtn=document.getElementById('rw-dd-btn');
+var ddMenu=document.getElementById('rw-dd-menu');
+if(ddBtn&&ddMenu){
+  ddBtn.addEventListener('click',function(e){
     e.stopPropagation();
-    menu.style.display=menu.style.display==='block'?'none':'block';
+    ddMenu.classList.toggle('open');
   });
-  document.addEventListener('click',function(){menu.style.display='none';});
+  document.addEventListener('click',function(){ ddMenu.classList.remove('open'); });
 }
-var mb=document.getElementById('mobile-burger');
-var mn=document.getElementById('mobile-nav');
-if(mb&&mn){mb.addEventListener('click',function(){mn.style.display=mn.style.display==='block'?'none':'block';});}
+var burger=document.getElementById('rw-burger');
+var mobileNav=document.getElementById('rw-mobile-nav');
+if(burger&&mobileNav){
+  burger.addEventListener('click',function(){ mobileNav.classList.toggle('open'); });
+}
 </script>
-</body></html>
+</body>
+</html>
