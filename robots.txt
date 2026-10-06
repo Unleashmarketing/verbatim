@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /admin
+Disallow: /cases
+Disallow: /payment-success
+Disallow: /support
+Disallow: /api/
+
+Sitemap: https://verbatim-tool.de/sitemap.xml

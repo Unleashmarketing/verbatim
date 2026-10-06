@@ -1,0 +1,17 @@
+# Verbatim
+
+> KI-gestützte Transkription und Übersetzung historischer Urkunden in Sütterlin, Kurrent und altdeutscher Handschrift. Seitengenau abgerechnet, mit Plausibilitätsprüfung.
+
+Verbatim ist ein webbasierter Dienst, der Scans und PDFs historischer Dokumente per Künstlicher Intelligenz in lesbaren, modernen Text überführt. Anwendungsfälle reichen von Genealogie und Erbenermittlung über archivarische Erschließung bis zu juristischer und wissenschaftlicher Arbeit mit Quellen.
+
+## Seiten
+
+- [Startseite](/): Produktübersicht, Funktionen, Preise.
+- [Sütterlin übersetzen](/suetterlin-uebersetzen): KI-Transkription von Sütterlinschrift, mit Plausibilitätsprüfung.
+- [Kurrent lesen](/kurrent-lesen): Deutsche Kurrentschrift aus Briefen, Akten und Urkunden entziffern lassen.
+- [Urkunden transkribieren KI](/urkunden-transkribieren-ki): Historische Handschriften archivtauglich digitalisieren.
+- [Software für Erbenermittler](/erbenermittler-software): Workflow und Abrechnung für Kanzleien und Erbenermittler.
+- [Support & FAQ](/support): Antworten auf häufige Fragen zu Analyse, Formaten, Datenschutz und Abrechnung.
+- [Impressum](/impressum): Anbieterkennzeichnung gemäß § 5 DDG.
+- [Datenschutz](/datenschutz): DSGVO-Datenschutzerklärung.
+- [AGB](/agb): Allgemeine Geschäftsbedingungen.
