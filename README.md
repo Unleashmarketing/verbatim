@@ -16,7 +16,7 @@ npm run build    # Produktions-Build nach /dist
 **`src/config.ts`** – Hier die URL der Lovable-App anpassen:
 
 ```ts
-export const APP_URL = "https://app.verbatim-tool.de";
+export const APP_URL = "https://verbatimtool.lovable.app";
 ```
 
 Alle Login/CTA-Buttons verlinken dorthin.
